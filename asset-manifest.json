@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.65dcb729.css",
-    "main.js": "/static/js/main.7e050381.js",
-    "static/media/aboutImage0.png": "/static/media/aboutImage0.9c812d56ad44ef15d508.png",
-    "index.html": "/index.html",
-    "main.65dcb729.css.map": "/static/css/main.65dcb729.css.map",
-    "main.7e050381.js.map": "/static/js/main.7e050381.js.map"
+    "main.css": "/clanknowledgepoint/static/css/main.65dcb729.css",
+    "main.js": "/clanknowledgepoint/static/js/main.cf7a6823.js",
+    "static/media/aboutImage0.png": "/clanknowledgepoint/static/media/aboutImage0.9c812d56ad44ef15d508.png",
+    "index.html": "/clanknowledgepoint/index.html",
+    "main.65dcb729.css.map": "/clanknowledgepoint/static/css/main.65dcb729.css.map",
+    "main.cf7a6823.js.map": "/clanknowledgepoint/static/js/main.cf7a6823.js.map"
   },
   "entrypoints": [
     "static/css/main.65dcb729.css",
-    "static/js/main.7e050381.js"
+    "static/js/main.cf7a6823.js"
   ]
 }
