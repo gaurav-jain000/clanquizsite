@@ -11,12 +11,17 @@
     transition: all .5s;
 }
 .news-section-body{
-    height: 75vh;
     overflow-y: scroll;
     position: relative;
 }
+.vh-75{
+    height: 75vh;
+}
 .bg-grey{
     background-color: rgba(224, 224, 224, 0.74);
+}
+.fs-6{
+    font-size: 12px !important;
 }
 img{
     width: 100%;
@@ -36,14 +41,12 @@ img{
     color: #1e90ff;
 }
 .scroll-div{
+    background-color: rgba(0, 68, 255, 0.5);
     backdrop-filter: blur(3px);
     z-index: 1;
 }
 .quiz-item{
     width: 700px;
-}
-.font-helvetica{
-    font-family: Helvetica, sans-serif;
 }
 .half-label{
     border-bottom-left-radius: 30px;
@@ -61,12 +64,20 @@ img{
     animation-duration: .8s;
     animation-name: appear-smooth;
 }
+.display-hidden{
+    display: none;
+}
 @keyframes appear-smooth{
     0%{
-        display: none;
         opacity: 0;
     }
     100%{
         opacity: 1;
+    }
+}
+@media screen and (max-width: 768px){
+    .vh-75{
+        height: auto;
+        max-height: 75vh;
     }
 }
