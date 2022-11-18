@@ -15,9 +15,8 @@ const App = () => {
           <Navbar />
         </div>
       </div>
-      <Routes basename='/clanknowledgepoint'>
-        <Route path="*" element={<Navigate replace to="/clanknowledgepoint" />} />
-        <Route path="/clanknowledgepoint" element={<Home />} />
+      <Routes>
+        <Route path="*" element={<Navigate replace to="/Home" />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/QuestionAndAnswers" element={<QuestionAndAnswers />} />
         <Route path="/Quiz" element={<Quiz />} />
