@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gaurav-jain000/clanknowledgepoint/static/css/main.65dcb729.css",
-    "main.js": "/gaurav-jain000/clanknowledgepoint/static/js/main.950814a4.js",
+    "main.js": "/gaurav-jain000/clanknowledgepoint/static/js/main.d1466778.js",
     "static/media/aboutImage0.png": "/gaurav-jain000/clanknowledgepoint/static/media/aboutImage0.9c812d56ad44ef15d508.png",
     "index.html": "/gaurav-jain000/clanknowledgepoint/index.html",
     "main.65dcb729.css.map": "/gaurav-jain000/clanknowledgepoint/static/css/main.65dcb729.css.map",
-    "main.950814a4.js.map": "/gaurav-jain000/clanknowledgepoint/static/js/main.950814a4.js.map"
+    "main.d1466778.js.map": "/gaurav-jain000/clanknowledgepoint/static/js/main.d1466778.js.map"
   },
   "entrypoints": [
     "static/css/main.65dcb729.css",
-    "static/js/main.950814a4.js"
+    "static/js/main.d1466778.js"
   ]
 }
