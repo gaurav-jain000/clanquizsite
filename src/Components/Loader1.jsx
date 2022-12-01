@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Loader1 = ({themeObj, text, loaderColor}) => {
-    console.log(themeObj);
     return (
         <div className="d-flex m-5 align-items-center justify-content-center">
             <strong className={`text-${themeObj.textColor}`}>{text}...</strong>
