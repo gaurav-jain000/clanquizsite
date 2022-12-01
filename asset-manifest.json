@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/clanquizsite/static/css/main.766b982e.css",
-    "main.js": "/clanquizsite/static/js/main.ee6ecec2.js",
+    "main.js": "/clanquizsite/static/js/main.34f10db3.js",
     "static/media/aboutImage0.png": "/clanquizsite/static/media/aboutImage0.f834cf93188f2de5c06c.png",
     "index.html": "/clanquizsite/index.html",
     "main.766b982e.css.map": "/clanquizsite/static/css/main.766b982e.css.map",
-    "main.ee6ecec2.js.map": "/clanquizsite/static/js/main.ee6ecec2.js.map"
+    "main.34f10db3.js.map": "/clanquizsite/static/js/main.34f10db3.js.map"
   },
   "entrypoints": [
     "static/css/main.766b982e.css",
-    "static/js/main.ee6ecec2.js"
+    "static/js/main.34f10db3.js"
   ]
 }
