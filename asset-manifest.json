@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/clanknowledgepoint/static/css/main.1807bb5e.css",
-    "main.js": "/clanknowledgepoint/static/js/main.b68c0e69.js",
-    "static/media/aboutImage0.png": "/clanknowledgepoint/static/media/aboutImage0.f834cf93188f2de5c06c.png",
-    "index.html": "/clanknowledgepoint/index.html",
-    "main.1807bb5e.css.map": "/clanknowledgepoint/static/css/main.1807bb5e.css.map",
-    "main.b68c0e69.js.map": "/clanknowledgepoint/static/js/main.b68c0e69.js.map"
+    "main.css": "/clanquizsite/static/css/main.766b982e.css",
+    "main.js": "/clanquizsite/static/js/main.ee6ecec2.js",
+    "static/media/aboutImage0.png": "/clanquizsite/static/media/aboutImage0.f834cf93188f2de5c06c.png",
+    "index.html": "/clanquizsite/index.html",
+    "main.766b982e.css.map": "/clanquizsite/static/css/main.766b982e.css.map",
+    "main.ee6ecec2.js.map": "/clanquizsite/static/js/main.ee6ecec2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1807bb5e.css",
-    "static/js/main.b68c0e69.js"
+    "static/css/main.766b982e.css",
+    "static/js/main.ee6ecec2.js"
   ]
 }
