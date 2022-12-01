@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const FilterMenu = ({ getQuestions }) => {
+const FilterMenu = ({ getQuestions, themeObj }) => {
   const [categories, setCategories] = useState([]);
   const generateQuestions = async (address = "https://opentdb.com/api.php?amount=10") => {
     try {
@@ -44,12 +44,12 @@ const FilterMenu = ({ getQuestions }) => {
 
   return (
     <>
-      <span id="filterColl" className="className='text-uppercase fw-bold text-dark h5 btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#filterMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="filterColl" className={`text-uppercase fw-bold h5 btn btn-outline-${themeObj.btnColor}`} type="button" data-bs-toggle="collapse" data-bs-target="#filterMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         Filter <i className="fa-solid fa-sliders"></i>
       </span>
       {
         <div className="collapse" id="filterMenu">
-          <div className='p-3 gap-2 d-flex flex-column flex-md-row align-items-md-center justify-content-md-around'>
+          <div className={`p-3 gap-2 d-flex flex-column text-${themeObj.textColor} flex-md-row align-items-md-center justify-content-md-around`}>
             <span>
               <label htmlFor="amount">Enter questions:</label>
               <input className='w-100 h-100 py-1' type="number" name="" defaultValue={10} min="10" max="50" id="amount" />
@@ -83,7 +83,7 @@ const FilterMenu = ({ getQuestions }) => {
               </select>
             </span>
             <span>
-              <button className='btn btn-primary' id="loadMoreBtn" onClick={filterBtnFunc}>Update Questions</button>
+              <button className={`btn btn-${themeObj.btnColor}`} id="loadMoreBtn" onClick={filterBtnFunc}>Update Questions</button>
             </span>
           </div>
         </div>

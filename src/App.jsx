@@ -8,22 +8,29 @@ import "./style.css"
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
+  const themeObj =  {
+    backgroundColor: "dark",
+    btnColor: "danger",
+    textColor: "light"
+  };
   return (
-    <div className='container-fluid vh-100'>
-      <div className="row">
-        <div className='col m-0 m-md-1'>
-          <Navbar />
+    <>
+      {/* Main content */}
+      <section className={`container-fluid min-vh-100 bg-${themeObj.backgroundColor}`}>
+        <div className="row">
+          <div className='col m-0 m-md-1'>
+            <Navbar themeObj={themeObj} />
+          </div>
         </div>
-      </div>
-      <Routes>
-        <Route path="*" element={<Navigate replace to="/" />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/QuestionAndAnswers" element={<QuestionAndAnswers />} />
-        <Route path="/Quiz" element={<Quiz />} />
-        <Route path="/About" element={<About />} />
-      </Routes>
-    </div>
+        <Routes>
+          <Route path="*" element={<Navigate replace to="/Home" />} />
+          <Route path="/Home" element={<Home themeObj={themeObj} />} />
+          <Route path="/QuestionAndAnswers" element={<QuestionAndAnswers themeObj={themeObj} />} />
+          <Route path="/Quiz" element={<Quiz themeObj={themeObj} />} />
+          <Route path="/About" element={<About themeObj={themeObj} />} />
+        </Routes>
+      </section>
+    </>
   )
 }
 

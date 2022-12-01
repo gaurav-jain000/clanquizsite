@@ -1,83 +1,159 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-.active{
-    font-weight: 600;
+
+.nav-link {
+    opacity: .5
+}
+
+.nav-link:hover {
+    opacity: 1;
     transition: all .5s;
 }
-.news-section-body{
+
+.active {
+    opacity: 1;
+}
+
+.news-section-body {
     overflow-y: scroll;
     position: relative;
-}
-.vh-75{
     height: 75vh;
 }
-.bg-grey{
+
+.vh-75 {
+    height: 75vh;
+}
+
+.bg-grey {
     background-color: rgba(224, 224, 224, 0.74);
 }
-.fs-6{
+
+.fs-6 {
     font-size: 12px !important;
 }
-img{
+
+img {
     width: 100%;
 }
-.contact-image{
-    object-fit: cover;
-    height: 250px;
-    width: 250px;
+
+.text-justify {
+    font-stretch: expanded;
+    text-align: justify;
 }
-.news-section-body a{
+
+.contact-image {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.news-section-body a {
     font-size: 13px;
 }
-#root{
-    min-height: 100vh;
-}
-.nav-link:hover{
-    color: #1e90ff;
-}
-.scroll-div{
+
+.scroll-div {
     background-color: rgba(0, 68, 255, 0.5);
     backdrop-filter: blur(3px);
     z-index: 1;
 }
-.quiz-item{
+
+.carousel-item>div>img {
+    object-fit: cover;
+    width: 500px;
+    height: 270px;
+}
+
+.quiz-item {
     width: 700px;
 }
-.half-label{
+
+.half-label {
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 }
-.half-button{
+
+.half-button {
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
 }
-.animation-appear-smooth{
+
+.display-hidden {
+    display: none;
+}
+
+ul.custom {
+    list-style: none;
+    /* Remove default bullets */
+}
+
+ul.custom li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #dc3545;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+/* Accordion */
+.accordion-button:focus {
+    box-shadow: inherit;
+}
+
+.accordion-button::after {
+    fill: #ffffff;
+    background-image: var(--bs-accordion-btn-active-icon);
+}
+
+/* Animation */
+.animation-appear-smooth {
     animation-duration: .8s;
     animation-name: appear-smooth;
 }
-.display-hidden{
-    display: none;
-}
-@keyframes appear-smooth{
-    0%{
+
+@keyframes appear-smooth {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-@media screen and (max-width: 768px){
-    .vh-75{
+
+@media screen and (max-width: 768px) {
+    .news-section-body {
         height: auto;
         max-height: 75vh;
+    }
+
+    .carousel-item>div>img {
+        height: 100px;
+        width: 200px;
+    }
+
+    .vh-75 {
+        max-height: 75vh;
+    }
+
+    .qna {
+        max-height: 100%;
     }
 }

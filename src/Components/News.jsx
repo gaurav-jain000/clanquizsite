@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Loader1 from './Loader1'
 
-const News = () => {
+const News = ({themeObj}) => {
   const [articles, setArticles] = useState(null)
   const [check, setCheck] = useState(0)
   const generateNews = () => {
@@ -21,11 +21,11 @@ const News = () => {
 
   return (
     <>
-      <div className='news-section-head h-0 rounded-top bg-dark text-light py-2 px-3'>
+      <div className={`news-section-head h-0 rounded-top bg-${themeObj.textColor} text-secondary  py-2 px-3`}>
         Recent News
       </div>
-      <div className={`news-section-body ${check ? "vh-75" : "vh-75"} d-flex flex-column align-items-center rounded-bottom bg-grey`}>
-        <button className='btn btn-primary rounded-pill my-2 px-3' onClick={generateNews}> Fetch News </button>
+      <div className={`news-section-body d-flex flex-column align-items-center rounded-bottom bg-grey`}>
+        <button className={`btn btn-${themeObj.btnColor} rounded-pill my-2 px-3`} onClick={generateNews}> Fetch News </button>
         {
           articles
             ?
@@ -49,7 +49,7 @@ const News = () => {
             </div>
             :
             <div className={`${check ? "" : "display-hidden"}`}>
-              <Loader1 text="Loading News" loaderColor="dark" />
+              <Loader1 themeObj={themeObj} loaderColor={themeObj.btnColor} text="Loading News" />
             </div>
         }
         <div className={`scroll-div w-100 ${articles ? "sticky-bottom" : "display-hidden"} text-light text-center m-0 py-3`}>
