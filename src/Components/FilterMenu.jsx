@@ -44,7 +44,7 @@ const FilterMenu = ({ getQuestions, themeObj }) => {
 
   return (
     <>
-      <span id="filterColl" className={`text-uppercase fw-bold h5 btn btn-outline-${themeObj.btnColor}`} type="button" data-bs-toggle="collapse" data-bs-target="#filterMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="filterColl" className={`text-uppercase mt-3 fw-bold h5 btn btn-outline-${themeObj.btnColor}`} type="button" data-bs-toggle="collapse" data-bs-target="#filterMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         Filter <i className="fa-solid fa-sliders"></i>
       </span>
       {
